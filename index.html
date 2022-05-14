@@ -423,22 +423,19 @@
           <p class="footer-soc-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <form class="subscription-form">
           <div class="subscription-field">
-            <div class="subscription-input-wrap">
             <input
               type="email"
               class="footer-input"
               name="footer-email"
               id="footer-email"
               placeholder="E-mail"
+              required
             />
-            </div>
           <div class="btn-wrap">
-          <button type="submit" class="footer-btn">Подписаться</button>
-          <span class="icon-span">
-          <svg class="btn-icon" width="18" hight="18">
+          <button type="submit" class="footer-btn">Подписаться<span class="icon-span">
+          <svg class="btn-icon" width="24" hight="24">
             <use href="./images/icons.svg.svg#icon-send"></use>
-          </svg>
-          </span>
+          </svg></span></button>
           </div>
           </div>
         </div>
@@ -480,6 +477,8 @@
                 required
                 title="+38 (096) 111-11-11"
                 id="user-tel"
+                minlength="13"
+                maxlength="13"
               />
               <svg class="input-icon" width="18" hight="18">
                 <use href="./images/icons.svg.svg#icon-phone-black"></use>
@@ -489,7 +488,7 @@
           <div class="modal-fild">
             <label class="modal-lable" for="user-email">Почта</label>
             <div class="modal-input-wrap">
-              <input type="email" class="modal-input" name="user-email" id="user-email" />
+              <input type="email" class="modal-input" name="user-email" id="user-email" required/>
               <svg class="input-icon" width="18" hight="18">
                 <use href="./images/icons.svg.svg#icon-email-black"></use>
               </svg>
