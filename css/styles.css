@@ -793,6 +793,7 @@ img {
 .check-text {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .check-text span {
